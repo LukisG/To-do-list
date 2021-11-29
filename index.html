@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js.js" defer></script>
+</head>
+<body>
+    <div class="container" id="bgclr">
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">To-Do List</a>
+            </div>
+          </nav>
+          <!-- informacijos surinkimo forma FORM-->
+          <div class="container d-flex justify-content-center bg-danger">
+                <form class="w-50">
+                    <div class="mb-3 mt-3">
+                        <label for="task" class="form-label">Task</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp" id="task">              
+                    </div>
+                    <div class="mb-3">
+                        <label for="task" class="form-label">Priority</label>
+                        <select class="form-select" aria-label="Default select example" id="priority">                            
+                            <option selected disabled>choose priority</option>
+                            <option>High</option>
+                            <option>Normal</option>
+                            <option>Low</option>
+                          </select>             
+                    </div>
+                    <div class="mb-3">
+                      <label for="task" class="form-label">Status</label>
+                      <select class="form-select" aria-label="Default select example" id="status">                            
+                          <option selected disabled>choose Status</option>
+                          <option>Compleate</option>
+                          <option>In-progress</option>
+                          <option>New</option>
+                        </select>             
+                  </div>
+                  <div class="mb-3">
+                    <label for="task" class="form-label">Progress</label>
+                    <select class="form-select" aria-label="Default select example" id="progress">                            
+                        <option selected disabled>choose compleate %</option>
+                        <option>0%</option>
+                        <option>25%</option>
+                        <option>50%</option>
+                        <option>75%</option>
+                        <option>100%</option>
+                      </select>             
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">date</label>
+                  <input type="date" class="form-control" id="date">
+                </div>
+
+
+
+
+                    <button type="submit" class="btn btn-primary mb-3" id="myButton">Submit</button>
+                </form>
+            </div>
+          <!-- informacijos surinkimo formos pabaiga -->
+          <!-- lentele duomenu isspausdinimui TABLE-->
+          
+          <table class="table table-dark table-striped">
+            <thead hidden> 
+              
+              <tr>
+                <th scope="col">Task</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Status</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time submited</th>
+                <th scope="col">Delete</th> 
+                               
+              </tr>
+            </thead>
+          
+            <tbody></tbody>
+          </table>
+          <!-- lenteles duomenu isspausdinimui pabaiga-->
+    </div>
+</body>
+</html>
